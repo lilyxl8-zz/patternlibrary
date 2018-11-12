@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tag from 'gumdrops/Tag';
+import Button from 'gumdrops/Button';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Button
+          context="primary"
+          onClick={() => {}}
+          className=""
+          style={{}}
+        >
+        <i className="fa fa-check -m-r-2" />
+        Great Success
+        </Button>
+        <Tag
+          context="primary"
+          hasOption
+          onClick={() => {}}
+          onOptionClick={() => {}}
+          optionLabel="Delete Tag"
+          style={{}}
+          text="Sample Text"
+        />
       </div>
     );
   }
